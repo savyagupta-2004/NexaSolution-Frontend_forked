@@ -8,7 +8,7 @@ import { Link, useNavigate } from "react-router-dom";
 function Login({ theme, notify }) {
   const { setIsAuthenticated } = useContext(AuthContext);
   const imgRef = useRef();
-  // const passRef = useRef();
+  const passRef = useRef();
   const backendUrl = "https://knbe.vercel.app"; // Change to http
 
   const [loading, setLoading] = useState(false);
