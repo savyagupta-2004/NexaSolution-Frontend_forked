@@ -1,15 +1,15 @@
 // src/components/Login.js
 import React, { useState, useRef, useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import Spinner from "../components/Spinner";
-import { AuthContext } from "../authContext";
+// import Spinner from "../components/Spinner";
+// import { AuthContext } from "../authContext";
 // import { login } from "../api/Login"; no need to Import the login function
 
 function Login({ theme, notify }) {
   const { setIsAuthenticated } = useContext(AuthContext);
   const imgRef = useRef();
-  const passRef = useRef();
-  const backendUrl = "https://keyncoders-main-backend.vercel.app"; // Change to http
+  // const passRef = useRef();
+  const backendUrl = "https://knbe.vercel.app"; // Change to http
 
   const [loading, setLoading] = useState(false);
 
